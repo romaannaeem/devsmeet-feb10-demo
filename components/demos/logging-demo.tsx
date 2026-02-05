@@ -10,8 +10,8 @@ export function LoggingDemo() {
 
   useEffect(() => {
     console.log("[LoggingDemo] Effect running, count was:", count);
-    
-  }, [count]);
+    setCount((prev) => prev + 1); // 🐛
+  }); // 🐛
 
   const handleIncrement = () => {
     console.log("[LoggingDemo] Button clicked");
