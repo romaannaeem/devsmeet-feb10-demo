@@ -16,7 +16,7 @@ export function BreakpointDemo() {
     if (isNaN(p) || isNaN(d)) return;
 
     // SET BREAKPOINT HERE - inspect p, d, and the result
-    const discounted = p + (p * d) / 100; // Bug: should be minus for discount!
+    const discounted = p + (p * d) / 100; // Bug here!
     setFinalPrice(discounted);
   };
 
