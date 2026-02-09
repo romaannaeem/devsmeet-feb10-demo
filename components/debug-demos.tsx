@@ -15,7 +15,7 @@ export function DebugDemos() {
         <TabsTrigger value="breakpoint">Breakpoint</TabsTrigger>
         <TabsTrigger value="network">Network</TabsTrigger>
         <TabsTrigger value="state">State</TabsTrigger>
-        <TabsTrigger value="stack">Stack</TabsTrigger>
+        {/* <TabsTrigger value="stack">Stack</TabsTrigger> */}
       </TabsList>
       <TabsContent value="logging" className="mt-6">
         <div className="space-y-2">
@@ -53,7 +53,7 @@ export function DebugDemos() {
           <StateInspectionDemo />
         </div>
       </TabsContent>
-      <TabsContent value="stack" className="mt-6">
+      {/* <TabsContent value="stack" className="mt-6">
         <div className="space-y-2">
           <h3 className="text-lg font-semibold">Stack Trace Demo</h3>
           <p className="text-sm text-muted-foreground">
@@ -61,7 +61,7 @@ export function DebugDemos() {
           </p>
           <StackTraceDemo />
         </div>
-      </TabsContent>
+      </TabsContent> */}
     </Tabs>
   );
 }

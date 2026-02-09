@@ -23,7 +23,7 @@ export function LoggingDemo() {
       <CardContent className="space-y-4">
         <p className="text-2xl font-bold">Count: {count}</p>
         {/* 🐛 Bug: onClick on both wrapper div AND button */}
-        <div>
+        <div onClick={handleIncrement}>
           <Button onClick={handleIncrement}>Increment</Button>
         </div>
       </CardContent>
